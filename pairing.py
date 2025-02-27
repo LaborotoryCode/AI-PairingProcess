@@ -1,5 +1,7 @@
+#Supports: Arabic, Chinese, Dutch, English, French, German, Italian, Korean, Polish, Portuguese, Russian, Spanish, Turkish
+
 from sentence_transformers import SentenceTransformer, SimilarityFunction
-model = SentenceTransformer("msmarco-distilbert-cos-v5", similarity_fn_name=SimilarityFunction.COSINE)
+model = SentenceTransformer("distiluse-base-multilingual-cased-v1", similarity_fn_name=SimilarityFunction.COSINE)
 
 print("Started")
 
